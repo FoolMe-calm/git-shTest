@@ -20,8 +20,9 @@ spring:
           min-idle: 1
           time-between-eviction-runs: 10s
   cache:
-      redis:
+    redis:
         time-to-live: 1800000 #设置数据过期时间
+    type: simple
 mybatis-plus:
   configuration:
     #在映射实体或者属性时，将数据库中表名和字段名中的下划线去掉，按照驼峰命名法映射
